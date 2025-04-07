@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Global Font Setup */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400;600&display=swap');
+
+.App {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  font-family: 'Roboto', sans-serif;  /* Professional, clean font */
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Neon Headings */
+.futuristic-heading {
+  font-family: 'Inter', sans-serif;  /* Sleek modern font for headings */
+  color: #00ffe7;
+  text-shadow: 0 0 8px #00ffe7, 0 0 20px #00ffe7;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* Navbar Brand Text */
+.neon-text {
+  color: #00ffe7 !important;
+  text-shadow: 0 0 8px #00ffe7;
+}
+
+/* Modern Glass Card Design */
+.glass-card,
+.futuristic-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Hover Effect */
+.glass-card:hover,
+.futuristic-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 255, 231, 0.2);
+}
+
+/* Futuristic Form Styling */
+.futuristic-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Form Hover */
+.futuristic-form:hover {
+  box-shadow: 0 12px 25px rgba(0, 255, 231, 0.15);
+}
+
+/* Buttons */
+.btn-info {
+  background-color: #00ffe7;
+  border: none;
+  color: #000;
+  transition: background 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.btn-info:hover {
+  background-color: #0ff;
+  color: #000;
+}
+
+/* Input Fields */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #00ffe7;
+  box-shadow: 0 0 5px #00ffe7;
+  color: white;
+}
+
+/* Text Placeholder */
+::placeholder {
+  color: #ccc;
+  opacity: 0.8;
+}
+
+/* Mobile Responsive Spacing */
+@media (max-width: 768px) {
+  .futuristic-form {
+    padding: 1.5rem;
+  }
+
+  .futuristic-heading {
+    font-size: 2rem;
+  }
+
+  .App {
+    padding: 20px;
+  }
 }
