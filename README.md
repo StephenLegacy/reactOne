@@ -1,8 +1,4 @@
 
-
----
-
-```markdown
 # 🌐 React One
 
 A modern React application built for learning @GomyCode, experimenting, and exploring the power of React.js! This project serves as a boilerplate or starter for anyone looking to build dynamic user interfaces using React and modern frontend tools.
